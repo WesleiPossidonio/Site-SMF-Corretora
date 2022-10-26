@@ -1,0 +1,12 @@
+.align {
+    display: flex;
+    align-items: center !important;
+}
+
+.text-slider {
+    font-size: 1rem !important;
+}
+
+.title-logo {
+    font-size: 1.2rem;
+}
