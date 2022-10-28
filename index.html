@@ -25,6 +25,7 @@
 
 <body>
   <div class="content-wrapper">
+
     <header class="wrapper bg-soft-primary">
       <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
         <div class="container flex-lg-row flex-nowrap justify-content-between align-items-center">
@@ -34,7 +35,7 @@
               <img class="logo-light" src="./assets/img/Logo-smf2.png" style="width: 160px ;" alt="" />
             </a>
           </div>
-          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start bg-nav-dark">
             <div class="offcanvas-header d-lg-none">
               <h3 class="text-white fs-30 mb-0">SMF Corretora</h3>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
@@ -42,17 +43,20 @@
             </div>
 
             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-">
+              <!-- /.navbar-nav -->
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
                 <li class="nav-item dropdown"><a class="nav-link" href="#">Vantagens</a>
                 </li>
+                 <!--/.dropdown-menu -->
                 <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#"
                     data-bs-toggle="dropdown">Serviços</a>
-                  <ul class="dropdown-menu mega-menu">
+                  <ul class="dropdown-menu mega-menu bg-nav-dark">
                     <li class="mega-menu-content">
                       <div class="row gx-0 gx-lg-3">
+
                         <div class="col-lg-4">
-                          <h6 class="dropdown-header">Seguros</h6>
+                          <h6 class="dropdown-header title-dropdown-header">Seguros</h6>
                           <div class="row gx-0">
                             <div class="col-lg-4">
                               <ul class="list-unstyled">
@@ -63,64 +67,40 @@
                                 <li><a class="dropdown-item" href="#">Seguro Frota</a></li>
                               </ul>
                             </div>
-                            <!--/column -->
                           </div>
-                          <!--/.row -->
                         </div>
-                        <!--/column -->
+
                         <div class="col-lg-4">
-                          <h6 class="dropdown-header">Planos</h6>
+                          <h6 class="dropdown-header title-dropdown-header">Planos</h6>
                           <ul class="list-unstyled">
                             <li><a class="dropdown-item" href="#">Planos Odonto</a></li>
                             <li><a class="dropdown-item" href="#">Planos de Saúde para Empresas</a></li>
                             <li><a class="dropdown-item" href="#">Planos Odonto</a></li>
                           </ul>
                         </div>
-                        <!--/column -->
+
                         <div class="col-lg-4">
-                          <h6 class="dropdown-header">Gerais</h6>
+                          <h6 class="dropdown-header title-dropdown-header">Gerais</h6>
                           <ul class="list-unstyled">
                             <li><a class="dropdown-item" href="#">Celular e Equipamentos</a></li>
                             <li><a class="dropdown-item" href="#">RC Profissional</a></li>
                             <li><a class="dropdown-item" href="#">Consórcios</a></li>
                           </ul>
                         </div>
-                        <!--/column -->
+
                       </div>
-                      <!--/.row -->
                     </li>
-                    <!--/.mega-menu-content-->
                   </ul>
                   <!--/.dropdown-menu -->
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown Large</a>
-                  <div class="dropdown-menu dropdown-lg">
-                    <div class="dropdown-lg-content">
-                      <div>
-                        <h6 class="dropdown-header">One</h6>
-                        <ul class="list-unstyled">
-                          <li><a class="dropdown-item" href="#">Link</a></li>
-                          <li><a class="dropdown-item" href="#">Link</a></li>
-                          <li><a class="dropdown-item" href="#">Another Link</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.column -->
-                      <div>
-                        <h6 class="dropdown-header">Two</h6>
-                        <ul class="list-unstyled">
-                          <li><a class="dropdown-item" href="#">Link</a></li>
-                          <li><a class="dropdown-item" href="#">Link</a></li>
-                          <li><a class="dropdown-item" href="#">Another Link</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.column -->
-                    </div>
-                    <!-- /auto-column -->
-                  </div>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="dropdown">Seguro Saúde</a>
                 </li>
+
               </ul>
               <!-- /.navbar-nav -->
+
               <div class="d-lg-none mt-auto pt-6 pb-6 order-4">
                 <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
                 <br /> 00 (123) 456 78 90 <br />
@@ -131,11 +111,9 @@
                   <a href="#"><i class="uil uil-instagram"></i></a>
                   <a href="#"><i class="uil uil-youtube"></i></a>
                 </nav>
-                <!-- /.social -->
               </div>
-              <!-- /offcanvas-nav-other -->
+             
             </div>
-            <!-- /.offcanvas-body -->
           </div>
 
           <div class="navbar-other ms-lg-4">
@@ -148,14 +126,11 @@
                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
               </li>
             </ul>
-            <!-- /.navbar-nav -->
           </div>
 
-          <!-- /.navbar-other -->
         </div>
-        <!-- /.container -->
       </nav>
-      <!-- /.navbar -->
+
       <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
         <div class="offcanvas-header">
           <h3 class="text-white fs-30 mb-0">Sandbox</h3>
@@ -167,13 +142,13 @@
             <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your
               business.</p>
           </div>
-          <!-- /.widget -->
+          
           <div class="widget mb-8">
             <h4 class="widget-title text-white mb-3">Contact Info</h4>
             <address> Moonshine St. 14/05 <br /> Light City, London </address>
             <a href="mailto:first.last@email.com">info@email.com</a><br /> 00 (123) 456 78 90
           </div>
-          <!-- /.widget -->
+          
           <div class="widget mb-8">
             <h4 class="widget-title text-white mb-3">Learn More</h4>
             <ul class="list-unstyled">
@@ -193,7 +168,6 @@
               <a href="#"><i class="uil uil-instagram"></i></a>
               <a href="#"><i class="uil uil-youtube"></i></a>
             </nav>
-            <!-- /.social -->
           </div>
           <!-- /.widget -->
         </div>
@@ -214,15 +188,15 @@
     </header>
     <!-- /header -->
 
-
-
+    <!-- /.start section main -->
     <section class="wrapper bg-dark">
       <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true" data-autoplaytime="7000"
         data-nav="true" data-dots="true" data-items="1">
         <div class="swiper">
           <div class="swiper-wrapper">
+
             <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
-              data-image-src="./assets/img/image-smf/imageTwo.jpg">
+              data-image-src="./assets/img/image-smf/imageTwo.png">
               <div class="container h-100">
                 <div class="row h-100">
                   <div
@@ -236,17 +210,12 @@
                     <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#"
                         class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
                   </div>
-                  <!--/column -->
                 </div>
-                <!--/.row -->
               </div>
-              <!--/.container -->
             </div>
-            <!--/.swiper-slide -->
-
 
             <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
-              data-image-src="./assets/img/image-smf/imageOne.jpg">
+              data-image-src="./assets/img/image-smf/imageOne.png">
               <div class="container h-100">
                 <div class="row h-100">
                   <div
@@ -261,16 +230,12 @@
                         href="./assets/media/movie.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5"
                         data-glightbox><i class="icn-caret-right"></i></a></div>
                   </div>
-                  <!--/column -->
                 </div>
-                <!--/.row -->
               </div>
-              <!--/.container -->
             </div>
-            <!--/.swiper-slide -->
 
             <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
-              data-image-src="./assets/img/image-smf/image.jpg">
+              data-image-src="./assets/img/image-smf/image.png">
               <div class="container h-100">
                 <div class="row h-100">
                   <div
@@ -284,128 +249,93 @@
                     <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#"
                         class="btn btn-lg btn-outline-white rounded-pill">Read More</a></div>
                   </div>
-                  <!--/column -->
                 </div>
-                <!--/.row -->
               </div>
-              <!--/.container -->
             </div>
 
-
-            <!--/.swiper-slide -->
           </div>
           <!--/.swiper-wrapper -->
         </div>
         <!-- /.swiper -->
       </div>
+      <!-- /.swiper container -->
     </section>
+    <!-- /.end section main -->
 
 
-
-
-    <section class="wrapper bg-light wrapper-border ">
-      <div class="container mt-10 mb-10">
-        <h2 class="text-uppercase text-muted text-center mb-8 title-logo">Tantas parceiras assim só a SMF corretora Tem
-        </h2>
-        <div class="swiper-container clients mb-0" data-margin="30" data-dots="false" data-autoplay="true"
-          data-autoplay-timeout="2000" data-items-xxl="7" data-items-xl="6" data-items-lg="5" data-items-md="4"
-          data-items-xs="2">
-          <div class="swiper ">
-            <div class="swiper-wrapper mySwiper align">
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/aliro.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/layout_set_logo.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/liberty.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-akad.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-allianz.webp" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-amil.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-azul.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-bradesco.webp" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-golden-cross.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-juntos-seguros.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-mapfre.webp" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-porto.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-sulamerica.png" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-tokio.webp" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/sompo.webp" alt="" /></div>
-              <div class="swiper-slide px-5"><img src="./assets/img/Logos/Suhai-home.webp" alt="" /></div>
+    <!-- start section about  -->
+    <section class="wrapper bg-dark-two">
+      <div class="container pt-10 pt-md-15 pb-10 pb-md-15">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center ">
+          
+          <div class="col-lg-6 order-2 order-lg-1 position-relative" data-cue="slideInLeft" data-duration="2500">
+            <div class="shape bg-line  rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;">
             </div>
-            <!--/.swiper-wrapper -->
-          </div>
-          <!-- /.swiper -->
-        </div>
-        <!-- /.swiper-container -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    <section class="wrapper bg-light">
-      <div class="container mt-15">
-        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-          <div class="col-lg-6 position-relative" data-cue="slideInLeft" data-duration="2500">
-            <div class="shape bg-line leaf rounded-circle rellax w-17 h-17" data-rellax-speed="1"
-              style="top: -2rem; right: -0.6rem;"></div>
-            <div class="shape bg-pale-violet rounded-circle rellax w-17 h-17" data-rellax-speed="1"
-              style="bottom: -2rem; left: -0.4rem;"></div>
+            <div class="shape rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
             <div class="player mb-0" data-plyr-provider="youtube" data-plyr-embed-id="j_Y2Gwaj7Gs"></div>
           </div>
-          <!--/column -->
-          <div class="col-lg-6" data-cue="slideInRight" data-duration="2500">
-            <h3 class="display-4 mb-4">Porque escolher a <br> SMF Seguros?</h3>
-            <p class="mb-5">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras
+          
+          <div class="col-lg-6 order-1 order-lg-2" data-cue="slideInRight" data-duration="2500">
+            <h3 class="display-4 mb-4 text-center text-md-start text-white">Porque escolher a <br> SMF Seguros?</h3>
+            <p class="mb-5 text-center text-md-start text-white mb-2">Cum sociis natoque penatibus et magnis dis
+              parturient
+              montes, nascetur ridiculus mus. Cras
               justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque
               nisl consectetur et. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius.</p>
-            <div class="row gy-3">
-              <div class="col-xl-6">
-                <ul class="icon-list bullet-bg bullet-soft-leaf mb-0">
-                  <li><span><i class="uil uil-check"></i></span><span>Aenean quam ornare curabitur blandit
-                      consectetur.</span></li>
-                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis
-                      ornare aenean leo.</span></li>
-                </ul>
+
+            <div class="row gy-8" data-cues="fadeIn">
+              <div class="col-md-6 pt-3">
+                <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                  <div>
+                    <i class="fa-regular fa-bolt-lightning icons me-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-1 text-white">Creativity</h4>
+
+                  </div>
+                </div>
               </div>
               <!--/column -->
-              <div class="col-xl-6">
-                <ul class="icon-list bullet-bg bullet-soft-leaf mb-0">
-                  <li><span><i class="uil uil-check"></i></span><span>Etiam porta euismod malesuada mollis nisl ornare
-                      sem.</span></li>
-                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Vivamus sagittis lacus augue rutrum
-                      maecenas.</span></li>
-                </ul>
+              <div class="col-md-6">
+                <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                  <div>
+                    <i class="fa-regular fa-handshake icons me-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-1 text-white">Innovative Thinking</h4>
+
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+              <div class="col-md-6">
+                <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                  <div>
+                    <i class="fa-duotone fa-puzzle icons me-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-1 text-white">Rapid Solutions</h4>
+
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+              <div class="col-md-6">
+                <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                  <div>
+                    <i class="fa-duotone fa-messages-question icons me-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-1 text-white">Top-Notch Support</h4>
+
+                  </div>
+                </div>
               </div>
               <!--/column -->
             </div>
-            <!--/.row -->
-            <a href="#" class="btn btn-soft-leaf rounded-pill mt-6 mb-0">Saiba Mais!</a>
+
+
+            <a href="#" class="btn btn-about rounded-pill mt-6 mb-0 d-flex">Saiba Mais!</a>
           </div>
           <!--/column -->
         </div>
@@ -414,77 +344,64 @@
     </section>
     <!-- /section -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="wrapper bg-light">
+    <section class="wrapper bg-image">
       <div class="container py-14 py-md-15 text-center">
         <div class="row">
           <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-            <h2 class="fs-15 text-uppercase text-muted mb-3">What We Do?</h2>
-            <h3 class="display-4 mb-10 px-xl-10">The service we offer is specifically designed to meet your needs.</h3>
+            <h2 class="fs-15 text-uppercase text-title mb-3">#Serviços</h2>
+            <h3 class="display-4 mb-10 px-xl-10 title">The service we offer is specifically designed to meet your needs.
+            </h3>
           </div>
           <!-- /column -->
         </div>
         <!-- /.row -->
         <div class="position-relative mb-5">
-          <div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
-          <div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1" style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
-          <div class="row gx-md-5 gy-5 text-center">
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <img src="./assets/img/icons/lineal/search-2.svg" class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt="" />
-                  <h4>SEO Services</h4>
-                  <a href="#" class="more hover link-yellow">Learn More</a>
-                </div>
-                <!--/.card-body -->
-              </div>
-              <!--/.card -->
-            </div>
-            <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-md text-red mb-3" alt="" />
-                  <h4>Web Design</h4>
-                  <a href="#" class="more hover link-red">Learn More</a>
-                </div>
-                <!--/.card-body -->
-              </div>
-              <!--/.card -->
-            </div>
-            <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
-                <div class="card-body">
-                  <img src="./assets/img/icons/lineal/chat-2.svg" class="svg-inject icon-svg icon-svg-md text-green mb-3" alt="" />
-                  <h4>Social Engagement</h4>
           
-                  <a href="#" class="more hover link-green">Learn More</a>
+          <div class="row gx-md-5 gy-5 text-center" >
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
+                <div class="card-body">
+                  <i class="fa-solid fa-car icons"></i>
+                  <h4 class="title">Seguro Auto</h4>
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
-                  <h4>Content Marketing</h4>
-          
-                  <a href="#" class="more hover link-blue">Learn More</a>
+                  <i class="fa-duotone fa-wave-pulse icons"></i>
+                  <h4 class="title">Seguro de Vida</h4>
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
+                <div class="card-body">
+                  <i class="fa-sharp fa-solid fa-bags-shopping icons"></i>
+                  <h4 class="title">Seguros de Lojas, Bares e Restaurantes</h4>
+
+                  <a href="#" class="more hover link-title">Learn More</a>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
+                <div class="card-body">
+                  <i class="fa-solid fa-cars icons"></i>
+                  <h4 class="title">Seguro Frota</h4>
+
+                  <a href="#" class="more hover link-title mb-5 mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
@@ -496,55 +413,53 @@
         </div>
 
         <div class="position-relative mb-5">
-          <div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
-          <div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1" style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
           <div class="row gx-md-5 gy-5 text-center">
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/search-2.svg" class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt="" />
-                  <h4>SEO Services</h4>
-          
-                  <a href="#" class="more hover link-yellow">Learn More</a>
+                  <i class="fa-sharp fa-solid fa-house-night icons"></i>
+                  <h4 class="title">Seguro Residencial</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-md text-red mb-3" alt="" />
-                  <h4>Web Design</h4>
-          
-                  <a href="#" class="more hover link-red">Learn More</a>
+                  <i class="fa-solid fa-tooth icons"></i>
+                  <h4 class="title">Planos Odonto</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/chat-2.svg" class="svg-inject icon-svg icon-svg-md text-green mb-3" alt="" />
-                  <h4>Social Engagement</h4>
-          
-                  <a href="#" class="more hover link-green">Learn More</a>
+                  <i class="fa-solid fa-hospital icons"></i>
+                  <h4 class="title">Planos de Saúde para Empresas</h4>
+
+                  <a href="#" class="more hover link-title">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
-                  <h4>Content Marketing</h4>
-          
-                  <a href="#" class="more hover link-blue">Learn More</a>
+                  <i class="fa-solid fa-mobile-screen icons"></i>
+                  <h4 class="title">Celular e Equipamentos</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
@@ -555,57 +470,54 @@
           <!--/.row -->
         </div>
 
-
         <div class="position-relative">
-          <div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
-          <div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1" style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
           <div class="row gx-md-5 gy-5 text-center">
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/search-2.svg" class="svg-inject icon-svg icon-svg-md text-yellow mb-3" alt="" />
-                  <h4>SEO Services</h4>
-          
-                  <a href="#" class="more hover link-yellow">Learn More</a>
+                  <i class="fa-solid fa-magnifying-glass icons"></i>
+                  <h4 class="title">SEO Services</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/browser.svg" class="svg-inject icon-svg icon-svg-md text-red mb-3" alt="" />
-                  <h4>Web Design</h4>
-          
-                  <a href="#" class="more hover link-red">Learn More</a>
+                  <i class="fa-solid fa-user-helmet-safety icons"></i>
+                  <h4 class="title">RC Profissional</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/chat-2.svg" class="svg-inject icon-svg icon-svg-md text-green mb-3" alt="" />
-                  <h4>Social Engagement</h4>
-          
-                  <a href="#" class="more hover link-green">Learn More</a>
+                  <i class="fa-solid fa-car-building icons"></i>
+                  <h4 class="title">Consórcios</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
               <!--/.card -->
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-              <div class="card shadow-lg">
+            <div class="col-md-6 col-xl-3" data-cues="fadeIn" data-duration="1000">
+              <div class="card shadow-lg bg-dark-two">
                 <div class="card-body">
-                  <img src="./assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md text-blue mb-3" alt="" />
-                  <h4>Content Marketing</h4>
-          
-                  <a href="#" class="more hover link-blue">Learn More</a>
+                  <i class="fa-solid fa-megaphone icons me-4"></i>
+                  <h4 class="title">Content Marketing</h4>
+
+                  <a href="#" class="more hover link-title mb-5">Learn More</a>
                 </div>
                 <!--/.card-body -->
               </div>
@@ -621,69 +533,183 @@
     </section>
     <!-- /section -->
 
-
-
-
-
-
-    <section class="wrapper bg-light">
-      <div class="container py-14 py-md-15">
-        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-          <div class="col-lg-6 order-lg-2 position-relative">
-            <div class="shape bg-line aqua rounded-circle rellax w-17 h-17" data-rellax-speed="1"
-              style="top: -2rem; left: -0.6rem;"></div>
-            <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1"
-              style="bottom: -2rem; right: -0.4rem;"></div>
-            <figure class="rounded mb-0"><img src="./assets/img/photos/se4.jpg"
-                srcset="./assets/img/photos/se4@2x.jpg 2x" alt=""></figure>
+    <section class="wrapper bg-dark-two wrapper-border ">
+      <div class="container pt-10 pb-10">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-4 mt-lg-2 text-center text-lg-start">
+            <h2 class="fs-15 text-uppercase mb-3 text-title">#Nossos Parceiros</h2>
+            <h3 class="display-4 mb-3 pe-xxl-5 text-white">Trusted by over 300+ clients</h3>
+            <p class="lead fs-lg mb-0 pe-xxl-5">We bring solutions to make life easier for our customers.</p>
           </div>
-          <!--/column -->
-          <div class="col-lg-6">
-            <h3 class="display-4 mb-4">Corporate Design</h3>
-            <p class="mb-5">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras
-              justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque
-              nisl
-              consectetur et.</p>
-            <div class="row gy-3">
-              <div class="col-xl-6">
-                <ul class="icon-list bullet-bg bullet-soft-aqua mb-0">
-                  <li><span><i class="uil uil-check"></i></span><span>Aenean quam ornare curabitur blandit
-                      consectetur.</span></li>
-                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis
-                      ornare aenean leo.</span></li>
-                </ul>
+          <div class="col-12 col-md-8 pt-2 pt-lg-0 text-center">
+            <div class="swiper-container clients mb-0" data-margin="30" data-dots="false" data-autoplay="true"
+              data-autoplay-timeout="2000" data-items-xxl="7" data-items-xl="6" data-items-lg="5" data-items-md="4"
+              data-items-xs="2">
+              <div class="swiper">
+                <div class="swiper-wrapper mySwiper align">
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/aliro.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/layout_set_logo.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/liberty.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-akad.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-allianz.webp" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-amil.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-azul.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-bradesco.webp" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-golden-cross.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-juntos-seguros.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-mapfre.webp" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-porto.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-sulamerica.png" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/logo-tokio.webp" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/sompo.webp" alt="" /></div>
+                  <div class="swiper-slide px-5"><img src="./assets/img/Logos/Suhai-home.webp" alt="" /></div>
+                </div>
+                <!--/.swiper-wrapper -->
               </div>
-              <!--/column -->
-              <div class="col-xl-6">
-                <ul class="icon-list bullet-bg bullet-soft-aqua mb-0">
-                  <li><span><i class="uil uil-check"></i></span><span>Etiam porta euismod malesuada mollis nisl ornare
-                      sem.</span></li>
-                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Vivamus sagittis lacus augue rutrum
-                      maecenas.</span></li>
-                </ul>
-              </div>
-              <!--/column -->
             </div>
-            <!--/.row -->
-            <a href="#" class="btn btn-soft-aqua rounded-pill mt-6 mb-0">More Details</a>
+            <!-- /.swiper -->
           </div>
-          <!--/column -->
+          <!-- /.swiper-container -->
         </div>
-        <!--/.row -->
+
       </div>
       <!-- /.container -->
     </section>
     <!-- /section -->
 
+    <section>
+      <div class="wrapper image-wrapper bg-image bg-overlay" data-image-src="./assets/img/photos/bg36.jpg">
+        <div class="container py-15 py-md-17">
+          <div class="row">
+            <div class="col-xl-9 mx-auto" data-cue="zoomIn" data-duration="1000">
+              <div class="card border-0 bg-nav-dark">
+                <div class="card-body py-lg-13 px-lg-16">
+                  <h2 class="display-5 mb-3 text-center text-white">Request Photography Pricing</h2>
+                  <p class="lead fs-lg text-center mb-10 text-white">For more information please get in touch using the
+                    form below:
+                  </p>
+                  <form class="contact-form needs-validation" method="post" action="./assets/php/contact.php"
+                    novalidate>
+                    <div class="messages"></div>
+                    <div class="row gx-4">
+                      <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                          <input id="form_name" type="text" name="name" class="form-control border-0" placeholder="Name"
+                            required>
+                          <label for="form_name">Nome</label>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            O Nome é Obrigatório
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /column -->
+                      <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                          <input id="form_email" type="email" name="email" class="form-control border-0"
+                            placeholder="jane.doe@example.com" required>
+                          <label for="form_email">Email</label>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            O Email é obrigatório
+                          </div>
+                        </div>
+                      </div>
 
-    <footer class="bg-dark text-inverse">
+                      <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                          <input id="frm_name" type="tel" name="phone" class="form-control border-0"
+                            placeholder="Telefone" required="required" data-error="O numero do celular e obrigatório"
+                            maxlength="14">
+                          <label for="frm_name">Telefone</label>
+                          <div class="invalid-feedback">
+                            O Nímero do celular é Obrigatório
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-select-wrapper mb-4">
+                          <select class="form-select" id="form-select" name="department" required>
+                            <option selected disabled value="">Selecione o Serviço</option>
+                            <option value="Sales">Seguro</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Customer Support">Customer Support</option>
+                          </select>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            É Obrigatório o tipo de Serviço
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- /column -->
+                      <div class="col-12">
+                        <div class="form-floating mb-4">
+                          <textarea id="form_message" name="message" class="form-control border-0"
+                            placeholder="Your message" style="height: 150px" required></textarea>
+                          <label for="form_message">Messagem</label>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            A menssagem é Obrigatória
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /column -->
+                      <div class="col-12">
+                        <div class="form-check mb-4">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label text-white" for="invalidCheck">
+                            Aceito Termo de <a href="#" class="text-lgpd"> Política e Privacidade</a>.
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 text-center">
+                        <input type="submit" class="btn rounded-pill btn-send btn-form" value="Enviar Menssagem">
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </form>
+                  <!-- /form -->
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!-- /column -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.wrapper -->
+    </section>
+    <!-- /section -->
+
+    <footer class="bg-dark-two text-inverse">
       <div class="container py-13 py-md-15">
-        <div class="row gy-6 gy-lg-0">
-          <div class="col-lg-4">
+        <div class="row gy-6 gy-lg-0 text-center text-md-start">
+          <div class="col-lg-4 order-4 order-lg-1">
             <div class="widget">
-              <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
-              <p class="mb-4">© 2022 Sandbox. All rights reserved.</p>
-              <nav class="nav social social-white">
+              <img class="mb-4" src="./assets/img/Logo-smf.png" style="width: 130px ;" alt="" />
+              <p class="mb-4">© 2022 SMF Corretora. Todos os Direitos Reservados.</p>
+              <nav class="nav social social-white justify-content-center justify-content-md-start">
                 <a href="#"><i class="uil uil-twitter"></i></a>
                 <a href="#"><i class="uil uil-facebook-f"></i></a>
                 <a href="#"><i class="uil uil-dribbble"></i></a>
@@ -695,9 +721,9 @@
             <!-- /.widget -->
           </div>
           <!-- /column -->
-          <div class="col-md-4 col-lg-2 offset-lg-2">
+          <div class="col-md-4 col-lg-2 offset-lg-2 order-3 order-lg-2">
             <div class="widget">
-              <h4 class="widget-title mb-3 text-white">Need Help?</h4>
+              <h4 class="widget-title mb-3 text-white">Ajuda?</h4>
               <ul class="list-unstyled mb-0">
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Get Started</a></li>
@@ -708,9 +734,9 @@
             <!-- /.widget -->
           </div>
           <!-- /column -->
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2 order-1 order-lg-3">
             <div class="widget">
-              <h4 class="widget-title mb-3 text-white">Learn More</h4>
+              <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
               <ul class="list-unstyled mb-0">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Story</a></li>
@@ -722,9 +748,9 @@
             <!-- /.widget -->
           </div>
           <!-- /column -->
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2 order-2 order-lg-4">
             <div class="widget">
-              <h4 class="widget-title mb-3 text-white">Get in Touch</h4>
+              <h4 class="widget-title mb-3 text-white">Endereço</h4>
               <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
               <a href="mailto:first.last@email.com">info@email.com</a><br /> 00 (123) 456 78 90
             </div>
