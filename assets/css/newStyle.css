@@ -35,7 +35,7 @@
     align-items: center !important;
 }
 
-.bg-image {
+.bg-image-two {
     background-image: url('../img/image-smf/bg-services.png') !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,4 +64,8 @@
 .btn-form {
 background-color: #FCC605;
 color: #000 !important;
+}
+
+.list-unstyled li a:hover, .widget a:hover, .link-inverse:hover {
+    color: #FCC605 !important;
 }
