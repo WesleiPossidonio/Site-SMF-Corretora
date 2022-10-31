@@ -31255,7 +31255,7 @@ button.hamburger span {
   text-align: center;
   line-height: 2.3rem;
   font-size: 1.2rem;
-  color: #3f78e0;
+  color: #FCC605;
   left: 0;
   top: 0;
   height: 2.3rem;
@@ -31274,7 +31274,7 @@ button.hamburger span {
   fill: none;
 }
 .progress-wrap svg.progress-circle path {
-  stroke: #3f78e0;
+  stroke: #FCC605;
   stroke-width: 4;
   box-sizing: border-box;
   transition: all 200ms linear;
