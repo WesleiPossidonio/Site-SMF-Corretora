@@ -27319,8 +27319,8 @@ button:focus {
 .navbar .btn-sm,
 .navbar .btn-group-sm>.btn {
   font-size: 0.8rem;
-  color: #000 !important; 
-  background-color: #FCC605 !important;
+  color: #f2f2f2 !important; 
+  background-color: #e20613 !important;
   border: none;
 }
 .social a:not(.btn-circle) {
@@ -28768,7 +28768,7 @@ button:focus {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after {
-    color: #3f78e0;
+    color: #e20613 !important;
   }
   .navbar-expand-lg .navbar-nav,
   .navbar-expand-lg .dropdown-mega {
@@ -37765,6 +37765,22 @@ footer.bg-dark.angled.upper-start:before {
 
 .text-color {
   color: #fff !important;
+}
+
+.nav-color {
+ color: #005296 !important;
+}
+
+.nav-color:hover {
+  color: #E20613 !important;
+}
+
+.nav-title-color {
+  color: #E20613 !important;
+}
+
+.hamburger-color {
+  color: #E20613 !important;
 }
 
 @media (max-width: 1200px) and (min-width: 992px){
