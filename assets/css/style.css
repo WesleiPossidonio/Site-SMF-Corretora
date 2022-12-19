@@ -37759,6 +37759,20 @@ footer.bg-dark.angled.upper-start:before {
   border-bottom: 1px solid #FCC605 !important;
 }
 
+@media (max-width: 1200px) and (min-width: 992px){
+  .style-container-image-about {
+    padding: 1.5rem 0 0 1.5rem;
+    width: 21rem;
+    height: 17rem;
+    }
+
+    .style-container-image-about img {
+      width: 21rem !important;
+      height: 17rem !important;
+    }
+}
+
+
 @media (max-width: 600px) { 
 
   .style-container-image-about {
@@ -37773,7 +37787,6 @@ footer.bg-dark.angled.upper-start:before {
     width: 17rem !important;
     height: 14rem !important;
   }
-
 }
 
 
