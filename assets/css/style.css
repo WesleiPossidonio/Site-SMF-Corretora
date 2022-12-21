@@ -29655,7 +29655,7 @@ button:focus {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-.navbar-expand.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after {
+.navbar-expand.navbar-light .dropdown:not(.dropdown-submenu)>.dropdown-toggle:after 
   color: #3f78e0;
 }
 .navbar-expand .navbar-nav,
@@ -30166,9 +30166,8 @@ header {
   background: #0D0D0D;
   opacity: 0.9
 }
-.navbar-stick:not(.navbar-light) {
+.navbar-2 {
   background: #fff !important;
-  opacity: 0.9
 }
 button.hamburger {
   cursor: pointer;
@@ -37793,7 +37792,7 @@ footer.bg-dark.angled.upper-start:before {
   color: #fff !important;
 }
 
-.nav-color {
+.nav-color, .title-text-2, .text-color-footer  {
  color: #005296 !important;
 }
 
@@ -37801,20 +37800,9 @@ footer.bg-dark.angled.upper-start:before {
   color: #E20613 !important;
 }
 
-.nav-title-color {
+.nav-title-color, .hamburger-color, .title-color-footer,
+ .social-color a i, .span-title-text  {
   color: #E20613 !important;
-}
-
-.hamburger-color {
-  color: #E20613 !important;
-}
-
-.title-text-2 {
-  color: #005296;
-}
-
-.span-title-text {
-  color: #E20613;
 }
 
 .btn-main{
