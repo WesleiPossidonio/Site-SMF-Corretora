@@ -27319,8 +27319,16 @@ button:focus {
 .navbar .btn-sm,
 .navbar .btn-group-sm>.btn {
   font-size: 0.8rem;
-  color: #f2f2f2 !important; 
-  background-color: #e20613 !important;
+  color: #000 !important; 
+  background-color: #FBC505 !important;
+  border: none;
+}
+
+.navbar .btn-sm-2,
+.navbar .btn-group-sm>.btn {
+  font-size: 0.8rem;
+  color: #fff !important; 
+  background-color: #E20613 !important;
   border: none;
 }
 .social a:not(.btn-circle) {
@@ -30158,6 +30166,10 @@ header {
   background: #0D0D0D;
   opacity: 0.9
 }
+.navbar-stick:not(.navbar-light) {
+  background: #fff !important;
+  opacity: 0.9
+}
 button.hamburger {
   cursor: pointer;
   background: none;
@@ -30169,6 +30181,20 @@ button.hamburger {
   align-items: center;
   justify-content: center;
   color: #FCC605 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+button.hb-2 {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0 0 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e20613 !important;
   transition: all 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -37781,6 +37807,19 @@ footer.bg-dark.angled.upper-start:before {
 
 .hamburger-color {
   color: #E20613 !important;
+}
+
+.title-text-2 {
+  color: #005296;
+}
+
+.span-title-text {
+  color: #E20613;
+}
+
+.btn-main{
+  background: #E20613;
+  color: #FFF;
 }
 
 @media (max-width: 1200px) and (min-width: 992px){
