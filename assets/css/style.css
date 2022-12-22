@@ -37810,6 +37810,14 @@ footer.bg-dark.angled.upper-start:before {
   color: #FFF;
 }
 
+.img-logo {
+  width: 10rem;
+}
+
+.img-footer-logo {
+  width: 8.125rem;
+}
+
 @media (max-width: 1200px) and (min-width: 992px){
   .style-container-image-about {
     padding: 1.5rem 0 0 1.5rem;
