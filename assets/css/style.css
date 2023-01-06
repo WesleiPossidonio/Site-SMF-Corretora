@@ -23207,7 +23207,7 @@ mark.doc,
   font-size: 0.65rem !important;
 }
 .fs-14 {
-  font-size: 0.7rem !important;
+  font-size: 0.6rem !important;
 }
 .fs-15 {
   font-size: 0.75rem !important;
@@ -23216,7 +23216,7 @@ mark.doc,
   font-size: 0.8rem !important;
 }
 .fs-17 {
-  font-size: 0.85rem !important;
+  font-size: 0.75rem !important;
 }
 .fs-18 {
   font-size: 0.9rem !important;
@@ -37776,18 +37776,18 @@ footer.bg-dark.angled.upper-start:before {
 
 .style-auto-about {
   padding-top: 5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
 }
 
 .style-container-image-about {
     padding: 1.5625rem 0 0 1.5625rem;
     background: #FCC605;
-    width: 25rem;
+    max-width: 25rem;
     height: 18.6rem;
 }
 
 .style-container-image-about img {
-  width: 25rem !important;
+  max-width: 25rem !important;
   height: 18.6rem !important;
 }
 
@@ -37832,65 +37832,36 @@ footer.bg-dark.angled.upper-start:before {
   width: 8.125rem;
 }
 
-@media (max-width: 1200px) and (min-width: 992px){
+@media (max-width: 1200px){
   .style-container-image-about {
     padding: 1.5rem 0 0 1.5rem;
-    width: 21rem;
+    max-width: 21rem;
     height: 17rem;
-    }
-
-    .style-container-image-about img {
-      width: 21rem !important;
-      height: 17rem !important;
-    }
-}
-
-
-@media (max-width: 600px) { 
-
-  .style-container-image-about {
-  padding: 1.5rem 0 0 1.5rem;
-  background: #FCC605;
-  width: 17rem;
-  height: 14rem;
-
   }
 
   .style-container-image-about img {
-    width: 17rem !important;
-    height: 14rem !important;
+    max-width: 21rem !important;
+    height: 17rem !important;
+  }
+
+}
+
+@media (max-width: 800px){
+  html {
+    font-size: 0.875rem !important;
   }
 }
 
-
-@media (max-width: 500px) { 
+@media (max-width: 400px) { 
 
   .style-container-image-about {
-    padding: 0.8rem 0 0 0.8rem;
-    background: #FCC605;
-    width: 15rem;
-    height: 12rem;
+    max-width: 17rem;
+    height: 13rem;
 }
 
 .style-container-image-about img {
-  width: 15rem !important;
-  height: 12rem !important;
-}
-
-}
-
-@media (max-width: 385px) { 
-
-  .style-container-image-about {
-    padding: 0.6rem 0 0 0.6rem;
-    background: #FCC605;
-    width: 12rem;
-    height: 9rem;
-}
-
-.style-container-image-about img {
-  width: 12rem !important;
-  height: 9rem !important;
+  width: 17rem !important;
+  height: 13rem !important;
 }
 
 }
