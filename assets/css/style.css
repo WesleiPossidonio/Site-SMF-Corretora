@@ -37852,17 +37852,33 @@ footer.bg-dark.angled.upper-start:before {
   }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 500px) { 
 
   .style-container-image-about {
     max-width: 17rem;
     height: 13rem;
+    padding: 1.25rem 0 0 1.25rem;
     margin-left: -1.2rem;
 }
 
 .style-container-image-about img {
   width: 17rem !important;
   height: 13rem !important;
+}
+
+}
+
+
+@media (max-width: 350px) { 
+
+  .style-container-image-about {
+    max-width: 14rem;
+    height: 11rem;
+}
+
+.style-container-image-about img {
+  width: 14rem !important;
+  height: 11rem !important;
 }
 
 }
