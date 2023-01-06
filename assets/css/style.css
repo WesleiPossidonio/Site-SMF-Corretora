@@ -37846,9 +37846,9 @@ footer.bg-dark.angled.upper-start:before {
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 1024px){
   html {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
   }
 }
 
@@ -37857,6 +37857,7 @@ footer.bg-dark.angled.upper-start:before {
   .style-container-image-about {
     max-width: 17rem;
     height: 13rem;
+    margin-left: -1.2rem;
 }
 
 .style-container-image-about img {
