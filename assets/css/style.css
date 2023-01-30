@@ -28704,7 +28704,7 @@ button:focus {
   .navbar-expand-lg .navbar-collapse .nav-link.active,
   .navbar-expand-lg .navbar-collapse .nav-link:hover,
   .navbar-expand-lg .navbar-collapse .nav-link:focus {
-    color: #fff !important;
+    color: #fff;
   }
   .navbar-expand-lg .navbar-collapse .nav-link {
     padding-top: 0.3rem;
@@ -30171,15 +30171,11 @@ header {
   background: #0D0D0D;
   opacity: 0.9
 }
-.navbar-2 {
+
+.navbar-2.navbar-stick {
   background: #fff !important;
 }
 
-.navbar-mobile{
-  box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.06);
-  background: #fff !important;
-  opacity: 0.7;
-}
 .text-color-2{
  color: #005296 !important;
 }
@@ -31547,7 +31543,7 @@ button.hamburger span {
   align-items: center;
 }
 .swiper-container .swiper img {
-  width: 90px;
+  width: 4.6rem;
   height: auto;
 }
 .swiper-container.nav-color .swiper-button,
@@ -37814,8 +37810,9 @@ footer.bg-dark.angled.upper-start:before {
   color: #E20613 !important;
 }
 
+
 .nav-title-color, .hamburger-color, .title-color-footer,
- .social-color a i, .span-title-text  {
+ .social-color a i, .span-title-text, .nav-mobile-color {
   color: #E20613 !important;
 }
 
@@ -37848,7 +37845,16 @@ footer.bg-dark.angled.upper-start:before {
 
 @media (max-width: 1024px){
   html {
-    font-size: 1.1rem !important;
+    font-size: 98% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  
+  .navbar-mobile {
+    box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.06);
+    background: #fff !important;
+    opacity: 0.7;
   }
 }
 
