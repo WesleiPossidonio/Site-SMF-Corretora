@@ -26336,12 +26336,20 @@ button:focus {
 .btn-primary {
   color: #fff;
   background-color: #3f78e0;
-  border-color: #3f78e0;
+  border-color: #3f78e0; 
+}
+.btn-primary-2 {
+  background-color: #005296 !important;
+  border-color: #005296 !important;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #3f78e0;
   border-color: #3f78e0;
+}
+.btn-primary-2:hover{
+  background-color: #005296 !important;
+  border-color: none !important;
 }
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
@@ -26368,10 +26376,31 @@ button:focus {
   color: #3f78e0;
   border-color: #3f78e0;
 }
+
+.btn-outline-primary-2{
+  color: #005296 !important;
+  border: 1px solid #005296 !important;
+}
+
+.btn-outline-primary-3 {
+  color: #E20613 !important;
+  border: 1px solid #E20613 !important;
+}
+
 .btn-outline-primary:hover {
   color: #fff;
   background-color: #3f78e0;
   border-color: #3f78e0;
+}
+.btn-outline-primary-2:hover {
+  color: #fff !important;
+  background-color: #005296 !important;
+  border-color: #005296 !important;
+}
+.btn-outline-primary-3:hover {
+  color: #FFF !important;
+  background-color: #E20613 !important;
+  border-color: #E20613 !important;
 }
 .btn-check:focus+.btn-outline-primary,
 .btn-outline-primary:focus {
@@ -27140,6 +27169,11 @@ button:focus {
 .btn-soft-primary {
   background-color: #e0e9fa;
   color: #3f78e0;
+}
+
+.btn-soft-primary-2 {
+  background: #f3f3f3 !important;
+  color: #e20613 !important;
 }
 .btn-soft-primary:hover {
   color: #3f78e0;
@@ -37802,14 +37836,17 @@ footer.bg-dark.angled.upper-start:before {
   color: #fff !important;
 }
 
+.title-style-2, .text-style {
+  color: #005296;
+}
+
 .nav-color, .title-text-2, .text-color-footer  {
  color: #005296 !important;
 }
 
-.nav-color:hover {
+.nav-color:hover{
   color: #E20613 !important;
 }
-
 
 .nav-title-color, .hamburger-color, .title-color-footer,
  .social-color a i, .span-title-text, .nav-mobile-color {
@@ -37828,6 +37865,11 @@ footer.bg-dark.angled.upper-start:before {
 .img-footer-logo {
   width: 8.125rem;
 }
+
+.text-color-3 {
+  color: #6F6F6E;
+}
+
 
 @media (max-width: 1200px){
   .style-container-image-about {
@@ -37873,7 +37915,6 @@ footer.bg-dark.angled.upper-start:before {
 }
 
 }
-
 
 @media (max-width: 350px) { 
 
