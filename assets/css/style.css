@@ -37870,6 +37870,9 @@ footer.bg-dark.angled.upper-start:before {
   color: #6F6F6E;
 }
 
+.new-text-align {
+  text-align: justify !important;
+}
 
 @media (max-width: 1200px){
   .style-container-image-about {
