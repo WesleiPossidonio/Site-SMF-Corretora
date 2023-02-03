@@ -47903,27 +47903,34 @@ footer.bg-dark.angled.upper-start:before {
   padding-bottom: 5rem;
 }
 
-.style-container-image-about {
+.style-container-image-about, .style-container-image-about2 {
   padding: 1.5625rem 0 0 1.5625rem;
   background: #FCC605;
   max-width: 25rem;
   height: 18.6rem;
 }
 
-.style-container-image-about img {
+.style-container-image-about2 {
+  background: #005296;
+}
+
+.style-container-image-about img, .style-container-image-about2 img {
   max-width: 25rem !important;
   height: 18.6rem !important;
 }
-
 
 .style-title {
   color: #FCC605;
 }
 
-.line-title {
+.line-title, .line-title2 {
   margin: 0 auto;
   width: 2.5rem;
   border-bottom: 1px solid #FCC605 !important;
+}
+
+.line-title2 {
+  border-bottom: 1px solid #E20613 !important;
 }
 
 .text-color {
@@ -47933,7 +47940,6 @@ footer.bg-dark.angled.upper-start:before {
 .nav-color,
 .title-text-2,
 .text-color-footer,
-.title-style,
 .title-style-2,
 .text-style,
 .title-style {
@@ -47957,6 +47963,18 @@ footer.bg-dark.angled.upper-start:before {
   background: #E20613;
   color: #FFF;
 }
+
+.btn-blue {
+  border: 3px solid #005296 !important;
+  background: transparent;
+  color: #005296 !important;
+}
+
+.btn-blue:hover  {
+   background: #005296 !important;
+   color: #fff !important;
+}
+
 
 .img-logo {
   width: 10rem;
@@ -48004,16 +48022,20 @@ footer.bg-dark.angled.upper-start:before {
   border: none;
 }
 
+.border-input {
+  border: 1px solid #000 !important;
+}
+
 
 
 @media (max-width: 1200px) {
-  .style-container-image-about {
+  .style-container-image-about, .style-container-image-about2 {
     padding: 1.5rem 0 0 1.5rem;
     max-width: 21rem;
     height: 17rem;
   }
 
-  .style-container-image-about img {
+  .style-container-image-about img, .style-container-image-about2 img {
     max-width: 21rem !important;
     height: 17rem !important;
   }
@@ -48037,14 +48059,14 @@ footer.bg-dark.angled.upper-start:before {
 
 @media (max-width: 500px) {
 
-  .style-container-image-about {
+  .style-container-image-about, .style-container-image-about2 {
     max-width: 17rem;
     height: 13rem;
     padding: 1.25rem 0 0 1.25rem;
     margin-left: -1.2rem;
   }
 
-  .style-container-image-about img {
+  .style-container-image-about img, .style-container-image-about2 img {
     width: 17rem !important;
     height: 13rem !important;
   }
@@ -48053,12 +48075,12 @@ footer.bg-dark.angled.upper-start:before {
 
 @media (max-width: 350px) {
 
-  .style-container-image-about {
+  .style-container-image-about, .style-container-image-about2 {
     max-width: 14rem;
     height: 11rem;
   }
 
-  .style-container-image-about img {
+  .style-container-image-about img, .style-container-image-about2 img {
     width: 14rem !important;
     height: 11rem !important;
   }

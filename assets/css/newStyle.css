@@ -73,6 +73,11 @@ background-color: #FCC605;
 color: #000 !important;
 }
 
+.btn-form2 {
+    background-color: #005296 !important;
+    color: #fff !important;
+    }
+
 .list-unstyled li a:hover, .widget a:hover, .link-inverse:hover {
     color: #FCC605 !important;
 }
