@@ -37836,11 +37836,8 @@ footer.bg-dark.angled.upper-start:before {
   color: #fff !important;
 }
 
-.title-style-2, .text-style {
-  color: #005296;
-}
-
-.nav-color, .title-text-2, .text-color-footer  {
+.nav-color, .title-text-2, .text-color-footer,
+.title-style, .title-style-2, .text-style, .title-style {
  color: #005296 !important;
 }
 
@@ -37866,13 +37863,39 @@ footer.bg-dark.angled.upper-start:before {
   width: 8.125rem;
 }
 
-.text-color-3 {
+.text-color-3, .text-style {
   color: #6F6F6E;
 }
 
 .new-text-align {
   text-align: justify !important;
 }
+
+.card-styles {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px !important;
+}
+
+.card-styles:hover {
+ background: #E20613;
+
+ transform: translateY(-5px);
+ transform: scale(1.1);
+ transition: all 0.5s;
+}
+
+.card-styles:hover .title-style{
+  color: #fff !important;
+}
+
+.btn-style {
+  background: #005296;
+}
+
+.icon-style {
+  width: 4rem;
+}
+
+
 
 @media (max-width: 1200px){
   .style-container-image-about {
