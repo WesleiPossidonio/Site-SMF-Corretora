@@ -93,6 +93,10 @@ Author:		elemis
   font-size: var(--bs-root-font-size);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -48026,7 +48030,21 @@ footer.bg-dark.angled.upper-start:before {
   border: 1px solid #000 !important;
 }
 
+.footer.linkFooter a:hover, .linkFooter:hover {
+  color: #FCC605  !important;
+}
 
+.whatsapp {
+  position: fixed;
+  left: 1rem;
+  bottom: 1.5rem;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.whatsapp img {
+  width: 3.2rem;
+}
 
 @media (max-width: 1200px) {
   .style-container-image-about, .style-container-image-about2 {

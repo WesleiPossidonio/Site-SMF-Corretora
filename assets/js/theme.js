@@ -738,16 +738,38 @@ var theme = {
               // Send message only if the form has class .contact-form
               var isContactForm = form.classList.contains('contact-form');
               if(isContactForm) {
-                var data = new FormData(form);
+                var listData = new FormData(form);
                 var alertClass = 'alert-danger';
-                fetch("assets/php/contact.php", {
-                  method: "post",
-                  body: data
-                }).then((data) => {
-                  if(data.ok) {
-                    alertClass = 'alert-success';
+               const data = {
+                 name: listData.get("name"),
+                 email: listData.get("email"),
+                 phone: listData.get("phone"),
+                 service: listData.get("servico") ? listData.get("servico") : '' ,
+                 menssage: listData.get("message"),
+                 lgpt: listData.get("lgpt"),
+               }
+               const newListData = JSON.stringify(listData)
+                console.log(newListData)
+                var alertClass = 'alert-danger';
+                fetch("http://localhost:3000/send", {
+                  method: "POST",
+                  body: JSON.stringify(data),
+                  headers: {
+                    "Content-Type": "application/json"
+                  },
+                }).then((response) => {
+                  if(response.ok) {
+                    Toastify({
+                      text: "Enviado com sucesso!",
+                      className: "info",
+                      style: {
+                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                      }
+                    }).showToast();
+
+                    form.reset()
                   }
-                  return data.text();
+                  return response.text();
                 }).then((txt) => {
                   var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + txt + '</div>';
                   if(alertClass && txt) {

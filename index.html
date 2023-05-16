@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/newStyle.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
   <!--Ícones -->
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
@@ -71,6 +72,14 @@
                                 </li>
                                 <li>
                                   <a class="dropdown-item" href="/seguro-de-frota.html">Seguro Frota</a>
+                                </li>
+
+                                <li>
+                                  <a class="dropdown-item" href="/Seguro-residencial.html">Seguro Residencial</a>
+                                </li>
+
+                                <li>
+                                  <a class="dropdown-item" href="/Seguro-viagem.html">Seguro Viagem</a>
                                 </li>
                               </ul>
                             </div>
@@ -242,10 +251,7 @@
                       Saiba como ter a melhor cobertura para o seu carro com o Seguro Auto
                     </p>
                     <div class="animate__animated animate__slideInUp animate__delay-3s">
-                      <a href="./assets/media/movie.mp4" class="btn btn-circle btn-white btn-play ripple mx-auto mb-5"
-                        data-glightbox>
-                        <i class="icn-caret-right"></i>
-                      </a>
+                      <a href="#" class="btn btn-lg btn-outline-white rounded-pill">Saiba Mais!</a>
                     </div>
                   </div>
                 </div>
@@ -283,9 +289,8 @@
       <div class="container pt-10 pt-md-15 pb-10 pb-md-15">
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
 
-          <div class="col-lg-6 order-2 order-lg-1 position-relative" data-cue="slideInLeft" data-duration="1500">
-            <div class="shape bg-line  rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;">
-            </div>
+          <div class="col-lg-6 order-2 order-lg-1 position-relative container-video" data-cue="slideInLeft" data-duration="1500">
+            <div class="shape bg-line  rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;"></div>
             <div class="shape rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
             <div class="player mb-0" data-plyr-provider="youtube" data-plyr-embed-id="j_Y2Gwaj7Gs"></div>
           </div>
@@ -302,62 +307,12 @@
                   atender às suas necessidades.
                 </p>
 
-                <p class="mb-5 new-text-align text-white mb-2">
+                <p class="mb-5 new-text-align text-white">
                   Com uma equipe de profissionais experientes e capacitados, a SMF tem uma forte reputação no
                   mercado e trabalha com as melhores seguradoras e instituições financeiras do país, garantindo
                   segurança e confiabilidade aos seus clientes.
                 </p>
-              </div>
-
-              <div class="col-12 col-md-6 col-lg-12">
-                <div class="row gy-2 mt-md-14 mt-lg-0" data-cues="fadeIn">
-
-                  <div class="col-6 pt-3">
-                    <div class="d-flex flex-row justify-content-center justify-content-md-start">
-                      <div>
-                        <i class="fa-regular fa-bolt-lightning icons me-4"></i>
-                      </div>
-                      <div>
-                        <h4 class="mb-1 text-white fs-17">Creativity</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center">
-                      <div>
-                        <i class="fa-regular fa-handshake icons me-4"></i>
-                      </div>
-                      <div>
-                        <h4 class="mb-1 text-white fs-17">Innovative Thinking</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center">
-                      <div>
-                        <i class="fa-duotone fa-puzzle icons me-4"></i>
-                      </div>
-                      <div>
-                        <h4 class="mb-1 text-white fs-17">Rapid Solutions</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-6">
-                    <div class="d-flex flex-row justify-content-center justify-content-md-start align-items-center">
-                      <div>
-                        <i class="fa-duotone fa-messages-question icons me-4"></i>
-                      </div>
-                      <div>
-                        <h4 class="mb-1 text-white fs-17">Top-Notch Support</h4>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <a href="#" class="btn btn-about rounded-pill mt-6 mb-0 d-flex d-md-inline-flex">Saiba Mais!</a>
+                <a href="#" class="btn btn-about rounded-pill mt-3 mb-0 d-flex d-md-inline-flex">Saiba Mais!</a>
               </div>
 
             </div>
@@ -368,13 +323,12 @@
     <!-- End section about -->
 
     <!-- start section services -->
-    <section class="wrapper bg-image-two" id="services">
+    <section class="wrapper bg-image-two bg-overlay image-wrapper bg-image bg-overlay" id="services" data-image-src="./assets/img/image-smf/bg-services.png">
       <div class="container py-14 py-md-15 text-center">
         <div class="row">
           <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
             <h2 class="fs-15 text-uppercase text-title mb-3">#Serviços</h2>
-            <h3 class="display-4 mb-10 px-xl-10 title fs-25"> The service we offer is specifically designed to meet your
-              needs.</h3>
+            <h3 class="display-4 mb-10 px-xl-2 title fs-25"> Nossa corretora de seguros está aqui para ajudar você a proteger o que é mais importante em sua vida</h3>
           </div>
         </div>
 
@@ -606,37 +560,25 @@
             <div class="col-xl-9 mx-auto" data-cue="zoomIn" data-duration="1000">
               <div class="card border-0 bg-nav-dark">
                 <div class="card-body py-lg-13 px-lg-16">
-                  <h2 class="display-5 mb-3 text-center text-white">Request Photography Pricing</h2>
-                  <p class="lead fs-lg text-center mb-10 text-white">For more information please get in touch using the
-                    form below:</p>
-                  <form class="contact-form needs-validation" method="post" action="./assets/php/contact.php"
-                    novalidate>
+                  <h2 class="display-5 mb-3 text-center text-white">Entre em contato conosco!</h2>
+                  <p class="lead fs-15 text-center mb-10 text-white">Se você tem alguma dúvida ou precisa de mais informações sobre nossos serviços de seguros, preencha o formulário abaixo e nossa equipe terá prazer em ajudá-lo!</p>
+                  <form class="contact-form needs-validation" method="post" id="form" action="http://localhost:3001/send" novalidate>
                     <div class="messages"></div>
                     <div class="row gx-4">
                       <div class="col-md-6">
                         <div class="form-floating mb-4">
-                          <input id="form_name" type="text" name="name" class="form-control border-0" placeholder="Name"
-                            required>
+                          <input id="form_name" type="text" name="name" class="form-control border-0" placeholder="Nome" required>
                           <label for="form_name">Nome</label>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
-                          <div class="invalid-feedback">
-                            O Nome é Obrigatório
-                          </div>
+                          <div class="invalid-feedback" id="invalid-name">Por favor, insira seu nome.</div>
                         </div>
                       </div>
 
                       <div class="col-md-6">
                         <div class="form-floating mb-4">
-                          <input id="form_email" type="email" name="email" class="form-control border-0"
-                            placeholder="jane.doe@example.com" required>
+                          <input id="form_email" type="email" name="email" class="form-control border-0" placeholder="jane.doe@example.com" required>
                           <label for="form_email">Email</label>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
                           <div class="invalid-feedback">
-                            O Email é obrigatório
+                            Por favor, fornecer um endereço de e-mail válido.
                           </div>
                         </div>
                       </div>
@@ -645,31 +587,30 @@
                         <div class="form-floating mb-4">
                           <input id="frm_name" type="tel" name="phone" class="form-control border-0"
                             placeholder="Telefone" required="required" data-error="O numero do celular e obrigatório"
-                            maxlength="14">
+                            maxlength="11" minlength="11">
                           <label for="frm_name">Telefone</label>
                           <div class="invalid-feedback">
-                            O Nímero do celular é Obrigatório
+                            Por favor, forneça um número de telefone válido.
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-6">
                         <div class="form-select-wrapper mb-4">
-                          <select class="form-select" id="form-select" name="department" required>
+                          <select class="form-select" id="form-select" name="servico" required>
                             <option selected disabled value="">Selecione o Serviço</option>
-                            <option value="Sales">Seguro</option>
-                            <option value="Sales">Sales</option>
-                            <option value="Sales">Sales</option>
-                            <option value="Sales">Sales</option>
-                            <option value="Sales">Sales</option>
-                            <option value="Marketing">Marketing</option>
-                            <option value="Customer Support">Customer Support</option>
+                            <option value="Seguro Auto">Seguro Auto</option>
+                            <option value="Seguro Moto">Seguro Moto</option>
+                            <option value="Seguro Celular e Equipamentos">Seguro Celular e Equipamentos</option>
+                            <option value="Seguro Frota">Seguro Frota</option>
+                            <option value="Seguro Loja">Seguro Loja</option>
+                            <option value="Seguro de Vida">Seguro de Vida</option>
+                            <option value="Seguro Saúde">Seguro Saúde</option>
+                            <option value="Plano Odonto">Plano Odonto</option>
+                            <option value="Consórcios">Consórcios</option>
                           </select>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
                           <div class="invalid-feedback">
-                            É Obrigatório o tipo de Serviço
+                            Por favor, ecolha o tipo de Serviço
                           </div>
                         </div>
                       </div>
@@ -679,28 +620,22 @@
                           <textarea id="form_message" name="message" class="form-control border-0"
                             placeholder="Your message" style="height: 150px" required></textarea>
                           <label for="form_message">Messagem</label>
-                          <div class="valid-feedback">
-                            Looks good!
-                          </div>
                           <div class="invalid-feedback">
-                            A menssagem é Obrigatória
+                            Por favor, digite sua mensagem.
                           </div>
                         </div>
                       </div>
 
                       <div class="col-12">
                         <div class="form-check mb-4">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <input class="form-check-input" type="checkbox" name="lgpt" value="" id="invalidCheck" required>
                           <label class="form-check-label text-white" for="invalidCheck">
                             Aceito Termo de <a href="#" class="text-lgpd"> Política e Privacidade</a>.
                           </label>
-                          <div class="invalid-feedback">
-                            You must agree before submitting.
-                          </div>
                         </div>
                       </div>
                       <div class="col-12 text-center">
-                        <input type="submit" class="btn rounded-pill btn-send btn-form" value="Enviar Menssagem">
+                        <input type="submit" class="btn rounded-pill btn-send btn-form" id="button-submit" value="Enviar Menssagem">
                       </div>
                     </div>
                   </form>
@@ -716,7 +651,7 @@
     <!-- End section form -->
 
     <!-- Start Footer -->
-    <footer class="bg-dark-two text-inverse">
+    <footer class="bg-dark-two text-inverse footer">
       <div class="container py-13 py-md-15">
         <div class="row gy-6 gy-lg-0 text-center text-md-start">
 
@@ -734,35 +669,34 @@
 
           <div class="col-md-4 col-lg-2 offset-lg-2 order-3 order-lg-2">
             <div class="widget">
-              <h4 class="widget-title mb-3 text-white">Ajuda?</h4>
+              <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
               <ul class="list-unstyled mb-0">
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Get Started</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#" class="linkFooter">Home</a></li>
+                <li><a href="#" class="linkFooter">Serviços</a></li>
+                <li><a href="#" class="linkFooter">Parceiros</a></li>
+                <li><a href="#" class="linkFooter">Seguro Saúde</a></li>
               </ul>
+             
             </div>
           </div>
 
           <div class="col-md-4 col-lg-2 order-1 order-lg-3">
             <div class="widget">
-              <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Features</a></li>
-              </ul>
+              <h4 class="widget-title mb-3 text-white">Endereço</h4>
+              <address>Avenida Agenor Caldas, Centro, Macaé-RJ</address>
+              <a href="mailto:first.last@email.com" class="linkFooter" >@smfcorretora.com.br</a><br /> <span>Tel: <a href="tel:+5521960141902" class="linkFooter fs-15">+55 (21) 96014-1902</a></span>
             </div>
           </div>
 
           <div class="col-md-4 col-lg-2 order-2 order-lg-4">
             <div class="widget">
-              <h4 class="widget-title mb-3 text-white">Endereço</h4>
-              <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <a href="mailto:first.last@email.com">info@email.com</a><br /> <span href="tel:#">00 (123) 456 78
-                90</span>
+              <h4 class="widget-title mb-3 text-white">Ajuda?</h4>
+              <ul class="list-unstyled mb-0">
+                <!-- <li><a href="#">Support</a></li>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Terms of Use</a></li> -->
+                <li class="linkFooter"><a href="#">Política de Privacidade</a></li>
+              </ul>
             </div>
           </div>
 
@@ -771,14 +705,20 @@
     </footer>
     <!-- End Footer -->
 
+    <button class="btn btn-circle btn-play whatsapp ripple">
+      <a href="https://wa.me/+5521960141902" target="_blank"> <img src="./assets/img/image-smf/whatsapp.png" class="" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp"></a>
+    </button>
+
     <div class="progress-wrap">
       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
     </div>
   </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <script src="./assets/js/form.js"></script>
 </body>
 
 </html>
