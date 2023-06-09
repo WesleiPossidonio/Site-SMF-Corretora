@@ -4,6 +4,6 @@
     color: #fff !important;
 }
 
-.navbar-2.navbar-stick .nav-color{
+.navbar-2.navbar-stick.navbar-expand-lg .navbar-collapse .nav-link{
     color: #005296 !important;
 }
