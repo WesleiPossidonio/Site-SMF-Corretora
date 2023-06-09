@@ -760,10 +760,11 @@ var theme = {
                 }).then((response) => {
                   if(response.ok) {
                     Toastify({
-                      text: "Enviado com sucesso!",
+                      text: "Email enviado com sucesso!",
                       className: "info",
                       style: {
-                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                        background: "#fff",
+                        color: "#000"
                       }
                     }).showToast();
 
