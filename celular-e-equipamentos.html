@@ -22,7 +22,6 @@
 <body>
     <div class="content-wrapper">
 
-        <!-- Start Header -->
         <header class="wrapper bg-soft-primary">
             <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
                 <div class="container flex-lg-row flex-nowrap justify-content-between align-items-center">
@@ -82,7 +81,8 @@
                                                                 </li>
                                                                 <li>
                                                                     <a class="dropdown-item"
-                                                                        href="/Seguro-residencial.html">Seguro Residencial</a>
+                                                                        href="/Seguro-residencial.html">Seguro
+                                                                        Residencial</a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="dropdown-item"
@@ -225,9 +225,29 @@
             </div>
 
         </header>
-        <!-- /End header -->
 
-        <!-- start section about  -->
+        <div class="modal fade modal-bottom-center" id="modal-01" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body p-6 bg-modal-dark">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-8 mb-4 mb-lg-0 my-auto align-items-center">
+                                <h4 class="mb-2 modal-dark-title">Politica de Privacidade</h4>
+                                <p class="mb-0 text-white text-modal">Este site utiliza <strong>Cookies</strong> , para
+                                    melhorar a sua experiência de navegação e personalizar o conteúdo oferecido. Ao
+                                    continuar a usar este site, você concorda com o uso de cookies de acordo com a nossa
+                                    <a class="me-2 modal-dark-title" href="#">Política de privacidade.</a> </p>
+                            </div>
+                            <div class="col-md-5 col-lg-4 text-lg-end my-auto">
+                                <a href="#" class="btn btn-modal-dark btn-primary rounded-pill text-dark"
+                                    id="button-modal" data-bs-dismiss="modal" aria-label="Close">Aceitar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="wrapper bg-dark-two style-auto-about">
             <div class="container pt-10 pt-md-15 pb-5 pb-md-0">
                 <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center justify-content-center">
@@ -263,11 +283,10 @@
                 </div>
             </div>
         </section>
-        <!-- End section about -->
 
-        <!--Start Section Call Action-->
         <section class="wrapper image-wrapper bg-dark-two">
-            <div class="wrapper image-wrapper bg-image bg-overlay" data-image-src="./assets/img/image-smf/image-seguro-celular.jpg">
+            <div class="wrapper image-wrapper bg-image bg-overlay"
+                data-image-src="./assets/img/image-smf/image-seguro-celular.jpg">
                 <div class="card-body p-8 p-sm-10 p-xl-12" data-cue="zoomIn" data-duration="1500">
                     <div class="row text-center">
                         <div class="col-xl-11 col-xxl-9 mx-auto">
@@ -285,9 +304,7 @@
                 </div>
             </div>
         </section>
-        <!--End Section Call Action-->
 
-        <!-- Start section form -->
         <section>
             <div class="wrapper bg-dark-two">
                 <div class="container pt-15 py-md-15">
@@ -298,9 +315,11 @@
                             <div class="line-title"></div>
                         </div>
                         <div class="col-lg-6">
-                            <h2 class="display-5 mb-3 pe-lg-10 text-white text-center text-md-start">Você tem dúvidas sobre como proteger seu celular ou equipamento eletrônico?</h2>
+                            <h2 class="display-5 mb-3 pe-lg-10 text-white text-center text-md-start">Você tem dúvidas
+                                sobre como proteger seu celular ou equipamento eletrônico?</h2>
                             <p class="lead pe-lg-12 mb-0 text-white text-center text-md-start fs-17">
-                                Não se preocupe! Nossa equipe está pronta para ajudar a esclarecer todas as suas dúvidas sobre seguros para celulares e equipamentos eletrônicos.
+                                Não se preocupe! Nossa equipe está pronta para ajudar a esclarecer todas as suas dúvidas
+                                sobre seguros para celulares e equipamentos eletrônicos.
                         </div>
 
                         <div class="col-lg-6">
@@ -313,16 +332,16 @@
                                                 placeholder="Jane" required="required"
                                                 data-error="First Name is required.">
                                             <label for="frm_name">Nome</label>
-                                            <div class="invalid-feedback" id="invalid-name">  Por favor, insira seu nome.
+                                            <div class="invalid-feedback" id="invalid-name"> Por favor, insira seu nome.
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-floating mb-4">
-                                            <input id="frm_email" type="tel" name="phone"
-                                                class="form-control border-0" placeholder="jane.doe@example.com"
-                                                required="required" data-error="Valid email is required.">
+                                            <input id="frm_email" type="tel" name="phone" class="form-control border-0"
+                                                placeholder="jane.doe@example.com" required="required"
+                                                data-error="Valid email is required.">
                                             <label for="frm_tel">Telefone</label>
                                             <div class="invalid-feedback">
                                                 Por favor, forneça um número de telefone válido.
@@ -343,9 +362,10 @@
                                     </div>
                                     <div class="col-md-6 d-none">
                                         <div class="form-select-wrapper mb-4">
-                                          <select class="form-select" id="form-select" name="servico" required>
-                                            <option value="Seguro Celular e Equipamentos">Seguro Celular e Equipamentos</option>
-                                          </select>
+                                            <select class="form-select" id="form-select" name="servico" required>
+                                                <option value="Seguro Celular e Equipamentos">Seguro Celular e
+                                                    Equipamentos</option>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -373,65 +393,67 @@
                 </div>
             </div>
         </section>
-        <!-- End section form -->
 
-        <!-- Start Footer -->
         <footer class="bg-dark-two text-inverse footer">
             <div class="container py-13 py-md-15">
-              <div class="row gy-6 gy-lg-0 text-center text-md-start">
-      
-                <div class="col-md-4 order-4 order-md-1">
-                  <div class="widget">
-                    <img class="mb-4 img-footer-logo" src="./assets/img/Logo-smf.png" alt="" />
-                    <p class="mb-4">© 2023 SMF Corretora. Todos os Direitos Reservados.</p>
-                    <nav class="nav social social-white justify-content-center justify-content-md-start">
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
-                      <a href="#"><i class="uil uil-instagram"></i></a>
-                      <a href="#"><i class="uil uil-youtube"></i></a>
-                    </nav>
-                  </div>
+                <div class="row gy-6 gy-lg-0 text-center text-md-start">
+
+                    <div class="col-md-4 order-4 order-md-1">
+                        <div class="widget">
+                            <img class="mb-4 img-footer-logo" src="./assets/img/Logo-smf.png" alt="" />
+                            <p class="mb-4">© 2023 SMF Corretora. Todos os Direitos Reservados.</p>
+                            <nav class="nav social social-white justify-content-center justify-content-md-start">
+                                <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                <a href="#"><i class="uil uil-instagram"></i></a>
+                                <a href="#"><i class="uil uil-youtube"></i></a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 offset-lg-2 order-3 order-lg-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="linkFooter">Home</a></li>
+                                <li><a href="#" class="linkFooter">Serviços</a></li>
+                                <li><a href="#" class="linkFooter">Parceiros</a></li>
+                                <li><a href="#" class="linkFooter">Seguro Saúde</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 order-1 order-lg-3">
+                        <div class="widget">
+                            <h4 class="widget-title mb-3 text-white">Endereço</h4>
+                            <address>Avenida Agenor Caldas, Centro, Macaé-RJ</address>
+                            <h4 class="widget-title mb-3 text-white">Ajuda?</h4>
+                            <ul class="list-unstyled mb-0">
+                                <!-- <li><a href="#">Support</a></li>
+                        <li><a href="#">Get Started</a></li>
+                        <li><a href="#">Terms of Use</a></li> -->
+                                <li class="linkFooter"><a href="#">Política de Privacidade</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-2 order-2 order-lg-4">
+                        <div class="widget">
+                            <h4 class="widget-title mb-3 text-white">Contatos</h4>
+                            <a href="mailto:first.last@email.com" class="linkFooter"> <span class="fs-18"> E-mail:
+                                </span> contato@smfcorretora.com.br</a>
+                            <a href="tel:+5521960141902" class="linkFooter mt-15"> <span class="fs-18"> Tel: </span> +55
+                                (21) 96014-1902</a>
+                        </div>
+                    </div>
+
                 </div>
-      
-                <div class="col-md-4 col-lg-2 offset-lg-2 order-3 order-lg-2">
-                  <div class="widget">
-                    <h4 class="widget-title mb-3 text-white">Mapa do Site</h4>
-                    <ul class="list-unstyled mb-0">
-                      <li><a href="#" class="linkFooter">Home</a></li>
-                      <li><a href="#" class="linkFooter">Serviços</a></li>
-                      <li><a href="#" class="linkFooter">Parceiros</a></li>
-                      <li><a href="#" class="linkFooter">Seguro Saúde</a></li>
-                    </ul>
-                   
-                  </div>
-                </div>
-      
-                <div class="col-md-4 col-lg-2 order-1 order-lg-3">
-                  <div class="widget">
-                    <h4 class="widget-title mb-3 text-white">Endereço</h4>
-                    <address>Avenida Agenor Caldas, Centro, Macaé-RJ</address>
-                    <a href="mailto:first.last@email.com" class="linkFooter" >@smfcorretora.com.br</a><br /> <span>Tel: <a href="tel:+5521960141902" class="linkFooter fs-15">+55 (21) 96014-1902</a></span>
-                  </div>
-                </div>
-      
-                <div class="col-md-4 col-lg-2 order-2 order-lg-4">
-                  <div class="widget">
-                    <h4 class="widget-title mb-3 text-white">Ajuda?</h4>
-                    <ul class="list-unstyled mb-0">
-                      <!-- <li><a href="#">Support</a></li>
-                      <li><a href="#">Get Started</a></li>
-                      <li><a href="#">Terms of Use</a></li> -->
-                      <li class="linkFooter"><a href="#">Política de Privacidade</a></li>
-                    </ul>
-                  </div>
-                </div>
-      
-              </div>
             </div>
-          </footer>
-        <!-- End Footer -->
+        </footer>
 
         <button class="btn btn-circle btn-play whatsapp ripple">
-            <a href="https://wa.me/+5521960141902" target="_blank"> <img src="./assets/img/image-smf/whatsapp.png" class="" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp"></a>
+            <a href="https://wa.me/+5521960141902" target="_blank"> <img src="./assets/img/image-smf/whatsapp.png"
+                    class="" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp"></a>
         </button>
 
         <div class="progress-wrap">
@@ -440,6 +462,7 @@
             </svg>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/theme.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

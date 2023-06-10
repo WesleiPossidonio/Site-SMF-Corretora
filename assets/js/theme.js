@@ -751,7 +751,7 @@ var theme = {
                const newListData = JSON.stringify(listData)
                 console.log(newListData)
                 var alertClass = 'alert-danger';
-                fetch("http://localhost:3000/send", {
+                fetch("https://api-sendemail.onrender.com/send", {
                   method: "POST",
                   body: JSON.stringify(data),
                   headers: {
@@ -892,3 +892,22 @@ var theme = {
   },
 }
 theme.init();
+
+$(document).ready(function() {
+
+  const cookiesAcept = localStorage.getItem('smf_cookies')
+
+  !cookiesAcept && $('#modal-01').modal('show');
+
+})
+
+
+const button = document.querySelector('#button-modal')
+
+button.addEventListener('click', () => {
+    const cookiesAcept = 'cookiesAceito'
+
+    localStorage.setItem('smf_cookies', JSON.stringify(cookiesAcept))
+
+    console.log('fui clicado')
+})
