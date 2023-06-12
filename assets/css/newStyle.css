@@ -90,3 +90,9 @@ color: #000 !important;
 .nav-color2 {
     color: #fff !important;
 }
+
+@media (max-width: 991.98px) {
+    .navbar-saude {
+        color: #E20613 !important;
+    }
+}
