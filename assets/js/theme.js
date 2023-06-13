@@ -715,51 +715,57 @@ var theme = {
       window.addEventListener("load", function () {
         var forms = document.querySelectorAll(".needs-validation");
         var inputRecaptcha = document.querySelector("input[data-recaptcha]");
+  
         window.verifyRecaptchaCallback = function (response) {
           inputRecaptcha.value = response;
           inputRecaptcha.dispatchEvent(new Event("change"));
-        }
+        };
+  
         window.expiredRecaptchaCallback = function () {
-          var inputRecaptcha = document.querySelector("input[data-recaptcha]");
           inputRecaptcha.value = "";
           inputRecaptcha.dispatchEvent(new Event("change"));
-        }
+        };
+  
         var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener("submit", async function(event) {
+          form.addEventListener("submit", function (event) {
             event.preventDefault();
             event.stopPropagation();
-          
+  
             if (form.checkValidity() === false) {
               form.classList.add("was-validated");
               return;
             }
-          
+  
             form.classList.add("was-validated");
             form.classList.remove("was-validated");
-          
+  
             var isContactForm = form.classList.contains("contact-form");
             if (isContactForm) {
-              // Obter dados do formulário
               var listData = new FormData(form);
               var data = {
                 name: listData.get("name"),
                 email: listData.get("email"),
                 phone: listData.get("phone"),
-                service: listData.get("servico") ? listData.get("servico") : "",
-                menssage: listData.get("message"),
+                service: listData.get("servico") || "",
+                message: listData.get("message"),
                 lgpt: listData.get("lgpt"),
               };
-          
-              try {
-                const response = await fetch("https://api-sendemail.onrender.com/send", {
-                  method: "POST",
-                  body: JSON.stringify(data),
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                });
-          
-                if (response.ok) {
+  
+              fetch("https://api-sendemail.onrender.com/send", {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              })
+                .then(function (response) {
+                  if (response.ok) {
+                    return response.text();
+                  } else {
+                    throw new Error("Erro ao enviar o email.");
+                  }
+                })
+                .then(function (text) {
                   Toastify({
                     text: "Email enviado com sucesso!",
                     className: "info",
@@ -768,20 +774,12 @@ var theme = {
                       color: "#000",
                     },
                   }).showToast();
-          
+  
                   form.reset();
-                }
-          
-                const txt = await response.text();
-                var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + txt + '</div>';
-                if (alertClass && txt) {
-                  form.querySelector(".messages").insertAdjacentHTML("beforeend", alertBox);
-                  form.reset();
-                  grecaptcha.reset();
-                }
-              } catch (error) {
-                console.log(error);
-              }
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
             }
           });
         });
