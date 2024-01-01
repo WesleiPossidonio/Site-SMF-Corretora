@@ -751,7 +751,7 @@ var theme = {
                 lgpt: listData.get("lgpt"),
               };
   
-              fetch("https://api-sendemail.onrender.com/send", {
+              fetch("https://nodemailer-smf.vercel.app/send", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
